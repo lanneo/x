@@ -31,7 +31,7 @@ jobs:
         id: docker_build
         uses: docker/build-push-action@master
         with:
-          context: .
+          context: ./ztncui.dockerfile
           platforms: linux/amd64,linux/arm64,linux/arm/v7
           push: true
           tags: |
